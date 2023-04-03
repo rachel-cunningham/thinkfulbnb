@@ -144,7 +144,9 @@ footer p {
     justify-content: space-around;
     flex-direction: column;
   }
-
+  form button {
+    width: auto;
+  }
   header {
     display: flex;
     justify-content: space-between;
