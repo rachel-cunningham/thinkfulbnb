@@ -31,7 +31,8 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 /* ---  Groups & Items --- */
@@ -39,6 +40,7 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .item {
@@ -72,11 +74,17 @@ header nav ul li a {
   color: #fff;
   text-decoration: none;
   padding: 0 20px 0 0;
+  cursor: pointer;
 }
 
 header nav ul li a:hover {
   color: #bdbdbd;
   text-decoration: none;
+}
+
+.list {
+  justify-content: center;
+  display: flex;
 }
 
 /* -------  Search Form ------- */
@@ -103,6 +111,10 @@ form button {
   padding: 15px;
   width: 100%;
 }
+.field {
+  display: flex;
+  justify-content: space-around;
+}
 
 /* -------  Footer ------- */
 
@@ -117,3 +129,73 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media only screen and (min-device-width: 768px) {
+  .body-tablet {
+    width: 150%;
+  }
+}
+@media all and (min-width: 480px) {
+  .fieldset {
+    display: flex;
+    justify-content: space-between;
+  }
+  .field {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .group {
+    flex-direction: row;
+  }
+
+  .item {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .item-double {
+    flex: 2;
+  }
+  .image-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .width-set {
+    width: 100%;
+  }
+  .alt-img {
+    width: 23%;
+  }
+  .size-format {
+    width: 48%;
+    padding-top: 45px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .host-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .bottom-para {
+    padding-top: 200px;
+  }
+  .body-tablet {
+    width: 100%;
+  }
+  .myinput {
+    width: auto;
+  }
+}
