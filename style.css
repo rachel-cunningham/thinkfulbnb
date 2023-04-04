@@ -129,15 +129,12 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-@media only screen and (min-device-width: 768px) {
-  .body-tablet {
-    width: 150%;
-  }
-}
+
 @media all and (min-width: 480px) {
   .fieldset {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .field {
     display: flex;
@@ -150,6 +147,7 @@ footer p {
   header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .group {
     flex-direction: row;
@@ -186,18 +184,52 @@ footer p {
     grid-row-gap: 20px;
   }
   .host-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    display: flex;
+    justify-content: space-evenly;
   }
-  .bottom-para {
-    padding-top: 200px;
-  }
+
   .body-tablet {
     width: 100%;
   }
   .myinput {
+    width: 65px;
+  }
+  .logo {
+    font-size: 35px;
+  }
+  .host-img {
+    width: 50%;
+  }
+  .host-div {
+    width: 50%;
+  }
+}
+@media all and (min-width: 600px) {
+  .myinput {
+    width: 95px;
+  }
+  .logo {
+    font-size: 60px;
+  }
+}
+@media all and (min-width: 768px) {
+  .myinput {
+    width: 130px;
+  }
+  .logo {
+    width: 72px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .myinput {
     width: auto;
+  }
+  .bottom-para {
+    padding-top: 4%;
+  }
+}
+@media all and (min-width: 1200px) {
+  .bottom-para {
+    padding-top: 15%;
   }
 }
